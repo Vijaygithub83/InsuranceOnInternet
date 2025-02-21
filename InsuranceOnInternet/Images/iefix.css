@@ -1,0 +1,18 @@
+#subnav UL LI#sideBanners {
+	MARGIN-LEFT: 0px
+}
+#subnav UL LI#sideBanners A {
+	MARGIN-LEFT: 0px
+}
+#subnav UL LI#sideBanners A:hover {
+	MARGIN-LEFT: 0px
+}
+#footerContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px
+}
+.footerLeft {
+	PADDING-TOP: 10px
+}
+.footerRight {
+	PADDING-TOP: 10px
+}

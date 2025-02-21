@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MainMasterPage.master.cs" Inherits="MainMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Insurance</title>
+    <link rel="stylesheet" type="text/css" href="Images/global.css" />
+    
+	<link rel="stylesheet" type="text/css" href="Images/printable-stylesheet.css" media="print" />
+	<link href="Images/plugin.css" rel="stylesheet" type="text/css" />
+	<link rel="shortcut icon" href="Images/favicon.ico" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="container">
+	<div id="header">
+		<h1>Insurance On Internet : Making it easy to find the right insurance.</h1>
+	            <br />
+                <br />
+                <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                ( A Web Based Application for Life Insurance)</div>
+	<div id="header-Print">
+		<img src="Images/header-print.gif" />
+	</div>
+	<ul id="gnav">
+        <li class="first">
+        <a href="frmHome.aspx">Home</a></li>
+        <li><a href="frmAboutUs.aspx">About Us</a></li>
+        <li><a href="frmContactUs.aspx">Contact Us</a></li>
+        <li><a href="Admin/Default.aspx">Administrator</a></li>        
+      <li><a href="Agents/Default.aspx">Agents</a></li>
+        <li><a href="Customers/Default.aspx">Customers</a></li>
+    </ul>
+    
+    
+	<div id="main">
+		
+		<table width="100%">
+		<tr>
+		<td width="20%" align="left"> 
+				<asp:LinkButton ID="lbUser"  runat="server" CausesValidation="false"
+                    PostBackUrl="~/frmUserRegistration.aspx" onclick="lbUser_Click">New User </asp:LinkButton> &nbsp;
+                 <asp:LinkButton ID="LinkButton1"  runat="server" CausesValidation="false"
+                    PostBackUrl="~/frmAgentRegistration.aspx">New Agent </asp:LinkButton>
+
+		<img src="Images/tree.bmp" width="200px" height="500px"  />
+		
+		 </td>
+		<td  width="80%" align="left"  >
+		<div  style="width:80%;">
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+		</td>
+		</tr>
+		</table>
+		<%--<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>--%>
+        
+		<%--<div >
+			<img src="Images/tree.bmp" width="200px" height="500px"  />
+		</div>--%>
+		<%--<div class="bottom">&nbsp;</div>--%>
+	</div>
+	 
+</div>
+<!--Footer-->
+     <div id="footerContainer">
+
+         <div class="footerLeft">
+         <br />
+         	 <p>Copyright , InsuranceOnInterntet, Inc. All Rights Reserved. </p>
+
+               &nbsp;</div>
+          
+     </div> 
+    <div>     
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,61 @@
+BODY {
+	border-style: none;
+	padding: 0px;
+	FLOAT: none! important; 	MARGIN: 0px; 	WIDTH: auto! important;
+}
+#main {
+	border-style: none;
+	padding: 0px;
+	FLOAT: none! important; 	MARGIN: 0px; 	WIDTH: auto;
+}
+#content {
+	border-style: none;
+	padding: 0px;
+	FLOAT: none! important; 	MARGIN: 0px; 	WIDTH: auto! important;
+}
+#container {
+	border-style: none;
+	padding: 0px;
+	FLOAT: none! important; 	MARGIN: 0px; 	WIDTH: auto! important;
+}
+#footer {
+	border-style: none;
+	padding: 0px;
+	FLOAT: none! important; 	MARGIN: 0px; 	WIDTH: auto! important;
+}
+HTML BODY PRE {
+	VERTICAL-ALIGN: top
+}
+HTML BODY CODE {
+	VERTICAL-ALIGN: top
+}
+BODY {
+	BACKGROUND: none transparent scroll repeat 0% 0%; TEXT-ALIGN: left
+}
+#header {
+	DISPLAY: none
+}
+#header-Print {
+	DISPLAY: block; VERTICAL-ALIGN: top; WIDTH: auto! important; TEXT-ALIGN: left
+}
+#subnav {
+	DISPLAY: none
+}
+#navigation {
+	DISPLAY: none
+}
+#bottomnav {
+	DISPLAY: none
+}
+#copyright {
+	FONT: 10px/12px Arial, Helvetica, sans-serif; COLOR: #999999
+}
+H1 {
+	FONT-SIZE: 18px; COLOR: #000000; TEXT-ALIGN: center
+}
+P {
+	FONT: 11px/14px Arial, Helvetica, sans-serif; COLOR: #333333
+}
+STRONG {
+	FONT-SIZE: 13px; FONT-STYLE: italic
+}

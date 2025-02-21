@@ -1,0 +1,124 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CustomerMasterPage.master.cs" Inherits="Customers_CustomerMasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Insurance</title>
+    <style type="text/css" >
+	    BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../Images/body-bkgTile.gif) repeat-y center top; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+	#content {
+	CLEAR: left; PADDING-RIGHT: 20px; MARGIN-TOP: 15px; FLOAT: right; FONT: 12px/17px Arial, Helvetica, sans-serif; WIDTH: 760px;
+     }
+     #container {
+	BACKGROUND: url(../Images/contentContainer-bkgTile.gif) #fff repeat-y center top; MARGIN: 0px auto; WIDTH: 785px
+     }
+     #header {
+	BACKGROUND: url(../Images/defaultHeader-bkg.jpg) no-repeat; HEIGHT: 124px
+     }
+     #header-Print {
+	DISPLAY: none
+     }
+     #footerContainer {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; BACKGROUND: url(../Images/footer-bkg.gif) no-repeat center top; PADDING-BOTTOM: 10px; MARGIN: 0px auto; FONT: 11px/15px 'Trebuchet MS', Verdana, Helvetica, Arial, sans-serif; WIDTH: 785px; COLOR: #484848; PADDING-TOP: 0px; HEIGHT: 20px; TEXT-ALIGN: left
+     }
+     .footerLeft {
+	FLOAT: left; MARGIN: 0px; WIDTH: 360px; PADDING-TOP: 10px; HEIGHT: auto; TEXT-ALIGN: left
+     }
+	    #form1
+        {
+            height: 245px;
+        }
+	</style>
+	
+	 <script src="../jquery.min.js" type="text/javascript"></script>
+        <script src="../jqueryslidemenu.js" type="text/javascript"></script>
+        <link href="../jqueryslidemenu.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="ScriptManager1" runat="server">
+    </asp:ScriptManager>
+    <div id="container">
+	<div id="header">
+		
+	    <br />
+        <br />
+&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+        ( A Web Based Application for Life Insurance)</div>
+	<div id="header-Print">
+		<img src="../Images/header-print.gif" />
+	</div>
+	<div id="myslidemenu" class="jqueryslidemenu">
+	<ul id="gnav">
+        
+        <li><a href="#">Policies</a>
+        <ul>        
+        <li><a href="frmCustomersandPolicies.aspx">Policies</a></li>
+                <li><a href="frmPolicyPayments.aspx">Policy Payments</a></li>
+
+        </ul>
+        </li> 
+        
+        <li><a href="#">News</a>
+        <ul>        
+        <li><a href="frmViewNoticesOrNews.aspx">Notices or News</a></li>
+        </ul>
+        </li>  
+           
+        <li><a href="#">Complaints</a>
+        <ul>       
+        <li><a href="frmComplaintsMaster.aspx">Complaints Master</a></li>
+        <li><a href="frmViewComplaintsStatus.aspx">Complaints Status</a></li>
+
+        </ul>
+        </li>  
+        
+        <li><a href="#">MyProfile</a>
+        <ul>       
+        <li><a href="frmUpdateMyProfile.aspx">Update MyProfile</a></li>
+              <li><a href="frmChangePassword.aspx">Change Password</a></li>
+  
+        </ul>
+        </li>  
+        
+        <li><a href="../frmLogout.aspx">Logout</a></li>
+        
+        
+    </ul>
+    </div>
+	
+
+		<div id="content">
+            
+		<asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+		<%--<div id="subnav">
+			 <img src="Images/tree.bmp" width="200px" height="500px"  />
+		</div>--%>
+		<%--<div class="bottom">&nbsp;</div>--%>
+	
+	 
+</div>
+<!--Footer-->
+     <div id="footerContainer">
+
+         <div class="footerLeft">
+         <br />
+         	 <p>Copyright , InsuranceOnInterntet, Inc. All Rights Reserved. </p>
+
+               &nbsp;</div>
+          
+     </div> 
+    
+    </form>
+</body>
+</html>

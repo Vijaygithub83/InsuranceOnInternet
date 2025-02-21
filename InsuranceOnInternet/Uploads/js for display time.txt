@@ -1,0 +1,89 @@
+http://webtraining.wetpaint.com/
+
+http://www.w3schools.com/JS/js_variables.asp
+
+http://www.w3schools.com/JS/JS_examples.asp
+
+***************************************************************
+    Display time
+
+<head>
+<script type="text/javascript">
+function startTime()
+{
+var today=new Date();
+var h=today.getHours();
+var m=today.getMinutes();
+var s=today.getSeconds();
+// add a zero in front of numbers<10
+m=checkTime(m);
+s=checkTime(s);
+document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+t=setTimeout('startTime()',500);
+}
+
+function checkTime(i)
+{
+if (i<10)
+  {
+  i="0" + i;
+  }
+return i;
+}
+</script>
+</head>
+
+<body onload="startTime()">
+<div id="txt"></div>
+</body>
+</html>
+
+*******************************************************************
+pavangurram@yahoo.co.in 
+
+*****************************************************************
+        Kakatiya university
+
+http://www.indiastudycenter.com/Univ/States/AP/Kakatiya-University-SDLCE/Study-Centres/default.asp
+
+
+
+**********************************************************************
+create trigger trg_CompareDate on tbl_Emp_DeptDetails after insert,update
+as
+begin
+declare @EndDate datetime
+select 
+@EndDate=emptransferenddate from tbl_Emp_DeptDetails
+where EmpId in(select EmpId from inserted)
+
+if(@EndDate=getdate())
+begin
+update tbl_Emp_DeptDetails set
+EmpTransferDate=@EndDate+1
+where 
+EmpId in(select EmpId from inserted)
+end
+end
+
+***********************************************************************
+create trigger trg_UpdateQualificationDetails on tbl_Emp_QualificationDetails
+after update
+as
+begin
+set nocount on
+declare @QualName varchar(50)
+declare @Specialization varchar(50)
+declare @Remarks varchar(500)
+
+select 
+@QualName=Qual_Name,
+@Specialization=SpecializationArea,
+@Remarks=SpecialRemarks
+from inserted
+
+update tbl_Emp_QualificationDetails set
+Qual_Name=upper(@QualName),
+SpecializationArea=upper(@Specialization)
+SpecialRemarks=upper(@Remarks)
+where 

@@ -25,7 +25,7 @@
                             </td>
                             </tr>
                             <tr>
-                            <td colspan="2" style="text-align: left; background-color:#5D7B9D;">
+                            <td colspan="2" style="text-align: left; background-color:#5D7B9D;" class="auto-style2">
                                 <asp:RadioButtonList AutoPostBack="true" ID="RadioButtonList1" runat="server" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged"
                                  RepeatDirection="Horizontal" Height="16px" style="color: #FFFFFF">
                                  <asp:ListItem>Add New Record</asp:ListItem>
@@ -67,7 +67,7 @@
                         </tr>
                         <tr>
                          <td >Policy Regd</td>
-                        <td  >
+                        <td>
                             <asp:DropDownList ID="ddlRegdId" runat="server" Width="226px" 
                                 >
                             </asp:DropDownList>
@@ -84,7 +84,7 @@
                         
                        <tr>
                        <td>Complaint Text</td>
-                       <td><asp:TextBox ID="txtComplaint" TextMode="MultiLine" runat="server" 
+                       <td class="auto-style3"><asp:TextBox ID="txtComplaint" TextMode="MultiLine" runat="server" 
                                Height="80px"></asp:TextBox></td>
                        <td>
                     <asp:RequiredFieldValidator ID="rfvComplaint" runat="server" ErrorMessage="*" ControlToValidate="txtComplaint"></asp:RequiredFieldValidator>
@@ -95,20 +95,22 @@
                         <td colspan="6"></td>
                         </tr>
                         <tr>
-                        <td colspan="3" align="left">
+                        <td colspan="6" align="left">
                             <asp:Button ID="btnShowAll" runat="server" BackColor="#797A80" 
                                  BorderColor="MediumSeaGreen" CausesValidation="False" ForeColor="White" 
                                  onclick="btnShowAll_Click" Text="ShowAll" Width="95px" />
-                        </td>
-                        <td colspan="3">
+                        
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        
                                 <asp:Button ID="btnSubmit" BorderColor="MediumSeaGreen" 
                                     BackColor="#797A80" ForeColor="White" runat="server"
                                     Text="Submit" Height="25px" Width="78px" OnClick="btnSubmit_Click" CssClass="auto-style1" 
                                      />&nbsp;&nbsp;&nbsp;
                             <asp:Button ID="btnDelete" BorderColor="Red" ForeColor="White" BackColor="#797A80" runat="server"
                              Text="Delete" Height="25px" Width="60px" CausesValidation="False" OnClick="btnDelete_Click" />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:Button ID="btncancel" BorderColor="Red" ForeColor="White" BackColor="#797A80" runat="server"
-                                    Text="Cancel" Height="25px" Width="79px" OnClick="btncancel_Click" 
+                                    Text="Cancel" Height="28px" Width="71px" OnClick="btncancel_Click" 
                                     CausesValidation="False" />
                             </td>
                         </tr>
